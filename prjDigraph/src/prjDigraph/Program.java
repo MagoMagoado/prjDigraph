@@ -8,7 +8,9 @@ package prjDigraph;
 
 public class Program {
 	public static void main(String[] args) {		
-		ConvertToDigraph file1 = new ConvertToDigraph("treatedFile.txt");
-		file1.generateDigraph();
+		TreatFile file = new TreatFile("Texto001.txt");
+		file.transformFile();
+		ConvertToDigraph file2 = new ConvertToDigraph("treatedFile.txt");
+		file2.generateDigraph();
 	}
 }

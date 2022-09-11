@@ -36,7 +36,6 @@ public class TreatFile {
 			while((line = reader.readLine()) != null) {
 				//turn all the character in lower case from the line
 				line = line.toLowerCase();
-				line = line.replaceAll("\\n", "");
 				line = removePunct(line);
 				line = removeAccents(line);
 				line = removeBreakPoints(line);
@@ -67,7 +66,7 @@ public class TreatFile {
 	 * @return return a String that will remove all the breaking points.
 	 */
 	protected String removeBreakPoints(String line) {
-		Pattern pattern = Pattern.compile("\n");
+		Pattern pattern = Pattern.compile("\\n+");
 	    //pattern.matcher: will find where is the match of the regex to text that we pass as param
 	    return pattern.matcher(line).replaceAll("");
 	}
