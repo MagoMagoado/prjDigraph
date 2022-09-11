@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * 
  */
@@ -6,7 +7,7 @@ package prjDigraph;
 import java.io.IOException;
 
 /**
- * @author 
+ * @author Valterci
  *
  */
 public class Controller {
@@ -29,7 +30,8 @@ public class Controller {
 		file.transformFile();
 	}
 	public void CallCovertoToDigraph() {
-		
+		ConvertToDiagraph convertToDiagraph = new ConvertToDiagraph(filePath);
+		convertToDiagraph.convertToDiagraph();
 	}
 	public void CallExportAsCVS() {
 		
