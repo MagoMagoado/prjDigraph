@@ -7,11 +7,9 @@ package prjDigraph;
 
 public class Program {
 	public static void main(String[] args) {
-		TreatFile obj1 = new TreatFile("Texto001.txt");
-		obj1.transformFile();
-		//ConvertToDigraph obj2 = new ConvertToDigraph("treatedFile.txt");
-		//obj2.generateDigraph();
-		//ExportAsCSV obj3 = new ExportAsCSV("digraphFile.txt");
-		//obj3.exportCSV();
+		Digraph obj = new Digraph("Texto001.txt");
+		obj.readFile();
+		obj.convertToDigraph();
+		obj.exportAsCVS();
 		}
 	}
