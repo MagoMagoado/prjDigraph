@@ -4,7 +4,7 @@
 package prjDigraph;
 
 /**
- * @author Val
+ * @author Yuri
  *@apiNote Class Digraph. Used to upload a file, treat it and export as a digraph.txt or digraph.csv.
  */
 public class Digraph {

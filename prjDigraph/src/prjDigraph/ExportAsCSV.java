@@ -30,12 +30,14 @@ public class ExportAsCSV {
 		try {
 			Writer writer = Files.newBufferedWriter(Paths.get("digraphCSV.csv"));
 			String txt = new String(Files.readAllBytes(Path.of(filePath)));
-			txt  = txt.replaceAll("\\n+", ";");
-			txt  = txt.replaceAll("\\p{Punct}", ";");
-			txt  = txt.replaceAll("\\s+", "");
+			int i = 0;			
 			for (String line: txt.split("\\n+")) {
 				//System.out.print(line);
-				writer.write(line);				
+				if(i != 0) {
+					writer.write("\n");
+				}
+				writer.write(line);
+				i++;
 			}
 			writer.close();
 

@@ -6,7 +6,7 @@ package prjDigraph;
 import java.io.IOException;
 
 /**
- * @author Val
+ * @author Valterci
  *@apiNote Class Controller. used to command all the classes that will interact with the Digraph class.
  */
 public class Controller {

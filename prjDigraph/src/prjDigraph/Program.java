@@ -3,7 +3,7 @@ package prjDigraph;
 import java.util.Scanner;
 
 /**
- * @author Isabella
+ * @author Yuri
  *
  */
 
